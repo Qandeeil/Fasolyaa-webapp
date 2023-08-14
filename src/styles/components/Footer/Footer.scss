@@ -1,0 +1,63 @@
+.footer {
+  background-color: #f2f6fd;
+  & .container {
+    width: 85%;
+    margin: auto;
+    padding: 80px 0;
+    display: flex;
+    justify-content: space-between;
+    & .leftFooter {
+      & .SitePolicies {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        & a {
+          color: #312858;
+          margin-right: 3rem;
+          padding-bottom: 10px;
+          border: 0;
+          border-style: solid;
+          border-bottom-width: 3px;
+          border-color: transparent;
+          transition: 0.3s;
+          &:hover {
+            border: 0;
+            border-bottom: 3px;
+            border-style: solid;
+            border-color: #312858;
+          }
+        }
+        & .active {
+          border: 0;
+          border-bottom: 3px;
+          border-style: solid;
+          border-color: #312858;
+        }
+      }
+      & .downloadApp {
+        & a:first-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+    & .rightFooter {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  & .containerAR {
+    flex-direction: row-reverse;
+    text-align: right;
+    & .leftFooter {
+      & .SitePolicies {
+        flex-direction: row-reverse;
+        & a {
+          margin-left: 3rem;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

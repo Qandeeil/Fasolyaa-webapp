@@ -1,0 +1,37 @@
+.termsCondition {
+  & .content {
+    padding: 20px;
+    padding-top: 100px;
+    color: #292929;
+    width: 85%;
+    margin: auto;
+    & h1 {
+      margin-bottom: 2rem;
+      font-weight: 500;
+      font-size: 45px;
+    }
+    & p {
+      line-height: 1.3rem;
+      letter-spacing: 0.08rem;
+      margin: 1rem 0;
+    }
+    & strong {
+        display: inline-block;
+        margin: 1rem 0;
+    }
+    ul {
+        margin: 0 9px;
+    }
+    & li {
+        margin: 1rem 9px;
+    }
+  }
+  & .contentAR {
+    text-align: right;
+    & p {
+      line-height: 1.8rem;
+      letter-spacing: 0rem;
+      margin: 1rem 0;
+    }
+  }
+}
