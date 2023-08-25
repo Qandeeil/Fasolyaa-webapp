@@ -11,6 +11,7 @@ import {
 import Terms_Conditions from './screens/Terms_Conditions';
 import Cookie_Policy from './screens/Cookie_Policy';
 import I18nInitializer from './i18n';
+import Page404 from './screens/Page404';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
   {
     path: '/Cookie_Policy',
     element: <Cookie_Policy />
+  },
+  {
+    path: '*',
+    element: <Page404 />
   }
 ]);
 

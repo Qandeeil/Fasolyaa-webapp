@@ -13,7 +13,7 @@ const DidYouKnow: React.FC<Props> = ({ t }) => {
     {
       id: 0,
       value: t('DidYouKnow.descriptionOne'),
-      color: `rgb(0,208,130)`,
+      color: `linear-gradient(135deg,rgba(161, 216, 88, 1) 0%,rgba(98, 192, 88, 1) 100%)`,
     },
     {
       id: 1,
@@ -48,11 +48,10 @@ const DidYouKnow: React.FC<Props> = ({ t }) => {
             <div className="slide" key={i}>
               <div
                 style={{
-                  backgroundColor: word.color,
-                  borderBottomRightRadius: "15px",
-                  borderBottomLeftRadius: "15px",
+                  borderBottomRightRadius: "20px",
+                  borderBottomLeftRadius: "20px",
                 }}
-                className="contentBox"
+                className={`contentBox ${i == 1 ? 'gradient-1' : i == 2 ? 'gradient-2' : 'gradient-3'}`}
               >
                 <h1>{t('DidYouKnow.title')}</h1>
                 <p>{word.value}</p>

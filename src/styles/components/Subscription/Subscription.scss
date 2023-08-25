@@ -108,3 +108,14 @@
     }
   }
 }
+
+
+@media (max-width: 734px) {
+  .subscription {
+    flex-direction: column;
+    & .card {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+}

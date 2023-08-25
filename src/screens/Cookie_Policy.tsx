@@ -15,7 +15,7 @@ const Cookie_Policy = (props: Props) => {
           scrollToArabic={function (): void {}}
           scrollToFromFamily={function (): void {}}
           scrollToDidYouKnow={function (): void {}}
-          scrollToSubscription={function (): void {}}
+          // scrollToSubscription={function (): void {}}
           t={t}
           il8n={il8n}
         />

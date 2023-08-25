@@ -36,8 +36,9 @@ const ArabicLanguage: React.FC<Props> = ({
   ];
   return (
     <div className="arabicLanguage">
+      <h1 style={{color: '#fff'}}>.</h1>
       <h1>{t('ArabicLanguage.title')}</h1>
-      <p>{t('ArabicLanguage.description')}</p>
+      <p className="descriptionAnimation">{t('ArabicLanguage.description')}</p>
       <div className="containerItems">
         {items.map((item) => (
           <div className="item" key={item.id}>

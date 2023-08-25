@@ -53,7 +53,7 @@ const Subscription = ({ t, il8n }: Props) => {
       shuffle: true,
       repeatForward: true,
       footerText: t("Subscription.allSongs"),
-      backgroundColor: "#1CB0DF",
+      backgroundColor: "rgba(172, 133, 188, 1)",
       backgroundColorSalary: "#AC85BC1C",
       backgroundColorContent: "#F6F7FA",
     },

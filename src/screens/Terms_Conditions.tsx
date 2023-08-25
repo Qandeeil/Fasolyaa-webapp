@@ -15,12 +15,12 @@ const Terms_Conditions = (props: Props) => {
           scrollToArabic={function (): void {}}
           scrollToFromFamily={function (): void {}}
           scrollToDidYouKnow={function (): void {}}
-          scrollToSubscription={function (): void {}}
+          // scrollToSubscription={function (): void {}}
           t={t}
           il8n={il8n}
         />
       </div>
-      <div className={il8n.language == 'en' ? "content" : "content contentAR"}>
+      <div className={il8n.language == "en" ? "content" : "content contentAR"}>
         <h1>{t("Terms_Conditions.title")}</h1>
         <strong>{t("Terms_Conditions.strong1")}</strong>
         <p>{t("Terms_Conditions.description1")}</p>

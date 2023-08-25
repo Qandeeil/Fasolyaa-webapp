@@ -61,3 +61,23 @@
     }
   }
 }
+
+@media (max-width: 734px) {
+  .footer {
+    & .container {
+      & .leftFooter {
+        & .SitePolicies {
+          & a {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+      & .rightFooter {
+        width: 20%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

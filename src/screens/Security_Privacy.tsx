@@ -15,12 +15,12 @@ const Security_Privacy = (props: Props) => {
           scrollToArabic={function (): void {}}
           scrollToFromFamily={function (): void {}}
           scrollToDidYouKnow={function (): void {}}
-          scrollToSubscription={function (): void {}}
+          // scrollToSubscription={function (): void {}}
           t={t}
           il8n={il8n}
         />
       </div>
-      <div className={il8n.language == 'en' ? "content" : 'content contentAR'}>
+      <div className={il8n.language == "en" ? "content" : "content contentAR"}>
         <h1>{t("Security_Privacy.title")}</h1>
         <p>
           <strong> {t("Security_Privacy.strong1")} </strong>

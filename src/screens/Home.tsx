@@ -16,7 +16,7 @@ const Home: React.FC<Props> = (props) => {
   const arabicLanguageRef = useRef<HTMLDivElement>(null);
   const fromFamilyRef = useRef<HTMLDivElement>(null);
   const didYouKnowRef = useRef<HTMLDivElement>(null);
-  const subscriptionRef = useRef<HTMLDivElement>(null);
+  // const subscriptionRef = useRef<HTMLDivElement>(null);
 
   const scrollToRef = (ref: React.RefObject<HTMLDivElement>) => {
     if (ref.current) {
@@ -30,7 +30,7 @@ const Home: React.FC<Props> = (props) => {
           scrollToArabic={() => scrollToRef(arabicLanguageRef)}
           scrollToFromFamily={() => scrollToRef(fromFamilyRef)}
           scrollToDidYouKnow={() => scrollToRef(didYouKnowRef)}
-          scrollToSubscription={() => scrollToRef(subscriptionRef)}
+          // scrollToSubscription={() => scrollToRef(subscriptionRef)}
           t={t}
           il8n={il8n}
         />
@@ -41,15 +41,17 @@ const Home: React.FC<Props> = (props) => {
           <ArabicLanguage t={t} />
         </div>
       </div>
-      <div ref={fromFamilyRef}>
+      <div ref={fromFamilyRef} style={{paddingTop: '1rem'}}>
         <FromFamily t={t} />
       </div>
       <div ref={didYouKnowRef}>
         <DidYouKnow t={t} />
       </div>
-      <div ref={subscriptionRef}>
+
+      {/* The reason for the concealment is that this service is not yet available */}
+      {/* <div ref={subscriptionRef}>
         <Subscription t={t} il8n={il8n} />
-      </div>
+      </div> */}
       <Footer t={t} il8n={il8n}/>
     </Fragment>
   );

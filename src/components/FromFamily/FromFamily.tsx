@@ -65,7 +65,7 @@ const FromFamily: React.FC<Props> = ({ t }) => {
           {items.map((item) => (
             <div className="item" key={item.id}>
               <div className="containerImageArabicLanguage">
-                <img src={item.image} alt="" />
+                <img src={item.image} alt={item.title} />
               </div>
               <p>{item.title}</p>
             </div>
