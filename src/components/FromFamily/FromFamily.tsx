@@ -5,7 +5,13 @@ type Props = {
   t: any;
 };
 
+declare const require: {
+  context(path: string, deep?: boolean, filter?: RegExp): any;
+};
+
 const FromFamily: React.FC<Props> = ({ t }) => {
+  const images = require.context("./icons", true);
+  const imageList = images.keys().map((image: any) => images(image));
   const items = [
     {
       id: 1,
@@ -59,13 +65,13 @@ const FromFamily: React.FC<Props> = ({ t }) => {
   return (
     <div className="fromFamily">
       <div className="containerContent">
-        <h1>{t('FromFamily.title')}</h1>
-        <p>{t('FromFamily.description')}</p>
+        <h1>{t("FromFamily.title")}</h1>
+        <p>{t("FromFamily.description")}</p>
         <div className="containerItems">
-          {items.map((item) => (
+          {items.map((item, index) => (
             <div className="item" key={item.id}>
               <div className="containerImageArabicLanguage">
-                <img src={item.image} alt={item.title} />
+                <img src={imageList[index]} alt={item.title} />
               </div>
               <p>{item.title}</p>
             </div>

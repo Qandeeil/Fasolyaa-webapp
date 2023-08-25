@@ -26,19 +26,34 @@
     justify-content: space-around;
     margin: 82.4px auto;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     & .item {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 25%;
         flex-wrap: wrap;
+        
         & .containerImageArabicLanguage {
-            width: 100px;
-            height: 100px;
+            width: 130px;
+            height: 130px;
             margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            object-fit: contain;
+            position: relative;
+            & .backgroundImage {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              opacity: 15%;
+              border-radius: 20px;
+            }
             & img {
-                width: 100%;
-                height: 100%;
+                width: 50%;
+                height: 50%;
             }
         }
         & p {

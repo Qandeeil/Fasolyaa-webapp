@@ -5,6 +5,8 @@ import "../../styles/components/Header/Header.scss";
 import useLocalStorage from "use-local-storage";
 import PopPup from "../PopPup/PopPup";
 import closeIcon from "./images/close.svg";
+import googlePlay from './icons/GooglePlay.svg'
+import AppStore from './icons/AppStore.svg'
 
 type Props = {
   scrollToArabic: () => void;
@@ -91,19 +93,19 @@ const Header: React.FC<Props> = ({
             <img src={Logo} alt="logo fasolyaa" />
           </div>
           <div className="contetnTitle">
-            <h1>Subscribe to Fasolyaa</h1>
-            <p>Currently, you cannot subscribe to through our application</p>
+            <h1>{t("PopPupSubscription.title")}</h1>
+            <p>{t("PopPupSubscription.description")}</p>
           </div>
           <div className="downloadApp">
             <NavLink to="">
               <img
-                src="https://fasolyaa.com/wp-content/uploads/elementor/thumbs/fasolyaa-play-storee-q8ttoirozanclg5rht6cobvyle28id4slcu93g5b3o.png"
+                src={googlePlay}
                 alt="Google play"
               />
             </NavLink>
             <NavLink to="">
               <img
-                src="https://fasolyaa.com/wp-content/uploads/elementor/thumbs/fasolyaa-appstore-q8ttongvxgts7hyxqd7hisp9kbf2kunga03ohtyc8k.png"
+                src={AppStore}
                 alt="App Store"
               />
             </NavLink>

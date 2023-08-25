@@ -5,6 +5,8 @@ import facebook from "./icons/facebook.svg";
 import instagram from "./icons/instagram.svg";
 import youtube from "./icons/youtube.svg";
 import email from "./icons/email.svg";
+import googlePlay from './icons/GooglePlay.svg'
+import AppStore from './icons/AppStore.svg'
 
 type Props = {
   t: any,
@@ -25,13 +27,13 @@ const Footer = ({t,il8n}: Props) => {
             <div className="downloadApp">
               <NavLink to="https://play.google.com/store/apps/details?id=com.fasolyaa.app">
                 <img
-                  src="https://fasolyaa.com/wp-content/uploads/elementor/thumbs/fasolyaa-play-storee-q8ttoirozanclg5rht6cobvyle28id4slcu93g5b3o.png"
+                  src={googlePlay}
                   alt="Google play"
                 />
               </NavLink>
               <NavLink to="https://apps.apple.com/us/app/fasolyaa/id1583543822">
                 <img
-                  src="https://fasolyaa.com/wp-content/uploads/elementor/thumbs/fasolyaa-appstore-q8ttongvxgts7hyxqd7hisp9kbf2kunga03ohtyc8k.png"
+                  src={AppStore}
                   alt="App Store"
                 />
               </NavLink>

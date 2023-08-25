@@ -45,6 +45,10 @@
     "allSongs": "All Songs, Stories, Games & Podcasts",
     "bottonSubscribe": "Subscribe"
   },
+  "PopPupSubscription": {
+    "title": "Subscribe to Fasolyaa",
+    "description": "Payment service is not currently available on our website, but you can subscribe through our app"
+  },
   "Footer": {
     "Security_Privacy": "Security & Privacy",
     "Terms_Conditions": "Terms & Conditions",
